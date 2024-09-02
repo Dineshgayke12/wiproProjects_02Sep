@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+    
+    <form action="/submit-form" method="post">
+        <label for="userId">User ID:</label><br>
+        <input type="text" id="userId" name="userId"><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        
+        <button type="submit">Submit</button>
+
+        <p id="demo">
+        <input type="button" onclick="countGenderElements()" value="number of gender options">
+    </p>
+    </form>
+
+    <script>
+        function countGenderElements(){
+
+            let x=document.getElementsByName("gender");
+            document.getElementById("demo")
+            .innerHTML=x.length ;
+        }
+    </script>
+</body>
+</html>

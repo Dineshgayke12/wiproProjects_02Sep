@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event </title>
+    <script>
+        function zoomIn(x){
+            x.style.height= "64px";
+            x.style.width= "64px";
+        }
+
+        function zoomOut(x){
+            x.style.height= "32px";
+            x.style.width= "32px";
+        }
+    </script>
+</head>
+<body>
+    
+    <h1>HTML Events using Javascript</h1>
+    <h3>onMouseover and onmouseout</h3>
+
+    <img onmouseover="zoomIn(this)" onmouseout="zoomOut(x)" border="0" src="./image1.jpg" alt="Home-interior" width="110" height="110">
+
+    <hr>
+
+   
+</body>
+</html>

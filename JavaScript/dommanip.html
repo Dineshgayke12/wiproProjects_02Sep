@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipultion</title>
+</head>
+<body>
+
+    <h1>Wlcome to DOM manipulation</h1>
+    <p id="demo">This is sample Document</p>
+
+    <button onclick="domManip()"> Change the doc</button>
+
+    <script>
+        //document.getElementById("demo").innerHTML=document.URL;
+
+        function domManip(){
+            document.open("text/html","replace");
+            document.write("<h1> The New Header</h1><p>And a Paragraph</p>");
+            document.close();
+        }
+    </script>
+</body>
+</html>
